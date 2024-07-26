@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor01: #F3EBF3;
+    --cor02: #C8D7E4;
+    --cor03: #295773;
+    --cor04: #295D7D;
+
+    --fonte-padrao: 'Poppins', cursive;
+    --fonte-extra: 'bebas Neue', cursive;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: var(--cor04)
+}
+
+header {
+    background-color: white;
+    font-family: var(--fonte-extra);
+    text-align: center;
+    
+}
+header h1 {
+    margin-bottom: 15px;
+}
+
+header > nav {
+    border-radius: 10px;
+}
+
+header > img {
+    border-radius: 100%;
+    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.303);
+    margin-bottom: 15px;
+}
+
+main {
+    font-family: var(--fonte-padrao);
+    text-indent: 30px;
+    min-width: 300px;
+    max-width: 900px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 212px; /* separar do footer */
+    background-color: white;
+    border-bottom-left-radius: 10px;  /* somente o lado arredonde */
+    border-bottom-right-radius: 10px;  /* somente o lado arredonde */
+
+}
+
+footer{
+    text-align: center;
+    background-color: var(--cor02);
+    font-weight: bolder;
+}

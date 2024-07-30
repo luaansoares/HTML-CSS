@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Passion+One:wght@400;700;900&display=swap');
+
+
+
+:root{
+    --cor2: black;
+    --cor2: white;
+
+    --fonte1: 'Passion One', cursive;
+    --fonte2: 'Alegreya', cursive;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-color: black;
+}
+
+header {
+    text-align: center;
+    padding: 150px;
+    color: white;
+    background-color: black;
+}
+header > h1 {
+    font-family: var(--fonte1);
+    font-size: 5em;
+}
+header > p > a {
+    color: white;
+    font-family: var(--fonte1);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header > p > a:hover {
+    text-decoration: underline;
+}
+
+.branco{
+    text-align: left;
+    word-wrap: break-word;
+    padding: 470px;
+    
+    background-color: white;
+}
+footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+}

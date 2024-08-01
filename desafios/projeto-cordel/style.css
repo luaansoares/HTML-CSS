@@ -12,6 +12,7 @@
 
     --fonte1: 'Passion One', cursive;
     --fonte2: 'Alegreya', cursive;
+    --fonte3: 'Verdana, Geneva', sans-serif;
 }
 
 *{
@@ -24,14 +25,17 @@ body{
 }
 
 header {
+    font-family: var(--fonte3);
     text-align: center;
-    padding: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     color: white;
     background-color: black;
 }
 header > h1 {
+    font-variant: small-caps;
     font-family: var(--fonte1);
-    font-size: 5em;
+    font-size: 10vw;
 }
 header > p > a {
     color: white;
@@ -44,15 +48,54 @@ header > p > a:hover {
     text-decoration: underline;
 }
 
-.branco{
-    text-align: left;
-    word-wrap: break-word;
-    padding: 470px;
-    
+section{
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    padding-left: 30px;
+    font-size: 3vw;
+    font-family: var(--fonte2);
+    line-height: 2em;
     background-color: white;
 }
-footer{
+    
+#girassol{
+    box-shadow: inset 5px 10px 12px rgba(0, 0, 0, 0.288);
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+section#girassol > p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.303);
+    width: 500px;
+}
+
+#folha{
+    box-shadow: inset 5px 10px 12px rgba(0, 0, 0, 0.288);
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+section#folha > p{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.303);
+    width: 500px;
+}
+
+footer {
+    font-family: var(--fonte3);
     text-align: center;
     color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: black;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
 }

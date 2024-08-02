@@ -58,11 +58,16 @@ section{
     line-height: 2em;
     background-color: white;
 }
+
+section > p{
+    padding-bottom: 2em;
+}
     
 section#girassol{
-    box-shadow: inset 5px 10px 12px rgba(0, 0, 0, 0.288);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.288);
     background-image: url(imagens/background001.jpg);
     background-position: right center;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -74,9 +79,10 @@ section#girassol > p {
 }
 
 section#folha{
-    box-shadow: inset 5px 10px 12px rgba(0, 0, 0, 0.288);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.288);
     background-image: url(imagens/background002.jpg);
     background-position: right center;
+    background-size: cover;
     background-attachment: fixed;
 }
 

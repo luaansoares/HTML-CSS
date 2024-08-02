@@ -21,6 +21,7 @@
 }
 
 body{
+    min-height: 100vh;
     background-color: black;
 }
 
@@ -51,14 +52,14 @@ header > p > a:hover {
 section{
     padding-bottom: 10vh;
     padding-top: 10vh;
-    padding-left: 30px;
+    padding-left: 3vw;
     font-size: 3vw;
     font-family: var(--fonte2);
     line-height: 2em;
     background-color: white;
 }
     
-#girassol{
+section#girassol{
     box-shadow: inset 5px 10px 12px rgba(0, 0, 0, 0.288);
     background-image: url(imagens/background001.jpg);
     background-position: right center;
@@ -68,10 +69,11 @@ section{
 section#girassol > p {
     color: white;
     background-color: rgba(0, 0, 0, 0.303);
-    width: 500px;
+    width: 40%;
+    max-width: 500px;
 }
 
-#folha{
+section#folha{
     box-shadow: inset 5px 10px 12px rgba(0, 0, 0, 0.288);
     background-image: url(imagens/background002.jpg);
     background-position: right center;
@@ -79,9 +81,9 @@ section#girassol > p {
 }
 
 section#folha > p{
+    width: 40%;
     color: white;
     background-color: rgba(0, 0, 0, 0.303);
-    width: 500px;
 }
 
 footer {
@@ -91,6 +93,7 @@ footer {
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: black;
+    
 }
 footer a {
     color: white;

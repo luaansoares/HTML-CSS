@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            width: 98vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sunt, aut id minus libero sapiente maxime et repellat. Perferendis numquam fugiat, libero nihil ea rerum velit expedita non neque eum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam quas adipisci eveniet inventore harum cupiditate, quos debitis officia ad pariatur ab quo laboriosam fugit animi minima consectetur atque incidunt eum.</p>
+
+    <ul>
+        <li><a href="pag001.html" target="frame">Primeira pag</a></li>  <!--Adicionar pag dentro do frame-->
+        <li><a href="pag002.html" target="frame">Segunda pag</a></li>
+        <li><a href="#">Terceira pag</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id excepturi dolor perferendis libero ratione dolorum expedita beatae sapiente, ad quod voluptatibus nulla! At quibusdam nulla quos iure totam corporis amet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex fugiat quis iure, minus commodi ipsa! Ipsam quod, amet accusantium voluptatibus rerum impedit ipsa blanditiis dignissimos tempora, fugit ducimus? Totam, molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat praesentium soluta architecto magnam blanditiis totam distinctio eum, dignissimos officia expedita incidunt eligendi possimus adipisci eius excepturi odio et, accusamus rem? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque enim nemo cupiditate quis necessitatibus voluptas commodi corrupti dolorum quas atque, facere voluptates veniam non dignissimos quo laudantium impedit tenetur vitae?</p>
+
+    <iframe name="frame" srcdoc="<h1>faça uma escolha </h1>"> <!--Sempre necessario o "name"-->
+        <p>Infelizmente seu navegador não é compativel</p>
+    </iframe>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam modi tempora, rem nam ex, earum corrupti iste sed ab officia praesentium unde nesciunt illo, quod libero exercitationem est voluptatum autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ullam nostrum optio obcaecati ad eligendi, non mollitia laboriosam at, adipisci, repellendus ducimus. Dolores expedita accusamus tempora velit totam explicabo odit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero architecto, dolorem harum hic corrupti nesciunt aut quae unde magnam odit dolor, nihil quisquam, aperiam voluptatem illo at inventore enim ipsa!</p>
+</body>
+</html>

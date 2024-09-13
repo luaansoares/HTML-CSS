@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on"></form>
+    <p>
+        <label for="in1">Numero 1:</label>
+        <input type="number" name="n1" id="in1" min="0" max="50" required
+        oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+    </p>
+
+    <p>
+        <label for="in2">Numero 2:</label>
+        <input type="number" name="n2" id="in2" min="0" max="50" required
+        oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+    </p>
+
+    <!--O evento "oninput" no JavaScript é usado para detectar quando o usuário digita ou altera algo em um campo de texto. Ele atualiza a página em tempo real enquanto o usuário está digitando.-->
+    <!--"innerHTML" é uma maneira de ler ou alterar o conteúdo dentro de um elemento HTML, como um parágrafo ou uma div. Você pode usá-lo para adicionar ou modificar o texto e até mesmo incluir HTML, como tags e estilos.-->
+
+    <p>
+        <label for="isoma">Soma: </label>
+        <output id="isoma">0</output>
+    </p>
+    <!--A tag <output> em HTML é usada para exibir o resultado de um cálculo ou de uma ação que foi realizada através de um script ou de uma interação do usuário. Ela é especialmente útil para mostrar resultados dinâmicos em uma página da web.-->
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>

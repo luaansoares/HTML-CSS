@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.conteiner {
+            background-color: bisque;
+            
+            display: flex;   /*Permite que o que está dentro do conteiner seja flex*/
+            flex-flow: row wrap;  /* flex-wrap: faz com que quando o conteudo se transborde, a linha quebre e desca o item*/
+        }
+
+        div.itens {
+            background-color: blueviolet;
+            border: 1px solid black;
+            text-align: center;
+            
+            flex: auto;   /* quando a ultima linha qubra, o conteudo não fique deslocado, mas tome toda a largura */
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="itens">Exempo de bloco A</div>
+        <div class="itens">Exempo de bloco B</div>
+        <div class="itens">Exempo de bloco C</div>
+        <div class="itens">Exempo de bloco D</div>
+        <div class="itens">Exempo de bloco E</div>
+        <div class="itens">Exempo de bloco F</div>
+        <div class="itens">Exempo de bloco G</div>
+    </div>
+</body>
+</html>

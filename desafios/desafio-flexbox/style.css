@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {    /*Conteiner pai*/
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;  /*fez com que o meu h1 ficasse na esquerda e o meu nav na direita*/
+    align-items: center;   /*alinhou os itens NAV no centro horizontal*/
+}
+
+header > h1 {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.323);
+    flex: 0 0 200px;   /*ele não quebrou, não diminuiu e ficou fixo em 200px*/
+}
+
+main {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.342);
+}
+
+nav {
+    display: flex;  /*Ajudar na quebra de linha*/
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+nav a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .5s;
+}
+
+

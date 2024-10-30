@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.wrapper div {
+    background-color: royalblue;
+    
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  /* função repeat, ( quantas colunas, e a medida */
+    grid-template-rows: repeat(3, minmax(200px, auto));   /* altura */  /* a altura minima seria de 200px e a maxima automatica */
+    grid-gap: 1rem;  /*espaço entre as linhas*/
+    
+}
+
+.wrapper div:nth-child(even) {
+    background-color: skyblue;
+}
+
+#um {
+    grid-column: 1 / -1;  /* define o quanto de grades vai usar*/
+    height: 270px;
+}
+
+#dois {
+    grid-column: 1;  /* define o quanto de grades vai usar*/
+    
+}
+
+#tres {
+    grid-column: 2 / 5;
+}
+
+#quatro {
+    
+
+}
+
+#cinco {
+    grid-column: 1 / -1;
+}
